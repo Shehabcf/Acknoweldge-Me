@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Hub</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Gaming Hub</h1>
+            <ul id="nav-list"></ul>
+        </nav>
+    </header>
+    <main>
+        <section id="welcome" data-section="welcome">
+            <h2>Welcome to the Gaming Hub</h2>
+            <p>Step into the ultimate gaming universe where epic adventures await! Discover the latest gaming news, tips, and community events.</p>
+            <p>Whether you're a casual player or a hardcore gamer, our hub has something for everyone. Join the fun!</p>
+        </section>
+        <section id="news" data-section="news">
+            <h2>Gaming News</h2>
+            <p>Stay updated with the hottest releases and patches. From AAA titles to indie gems, we cover it all.</p>
+            <p>Check out the latest trailers and developer insights to keep your gaming knowledge on point.</p>
+        </section>
+        <section id="tips" data-section="tips">
+            <h2>Pro Tips</h2>
+            <p>Level up your skills with expert strategies for your favorite games. Master those tricky boss fights!</p>
+            <p>From FPS to RPGs, our guides help you dominate the leaderboards and earn bragging rights.</p>
+        </section>
+        <section id="community" data-section="community">
+            <h2>Community Corner</h2>
+            <p>Connect with fellow gamers, share your epic moments, and join our vibrant community events.</p>
+            <p>Got a clutch play or a funny fail? Drop it in the comments below and let’s hype it up!</p>
+        </section>
+        <section id="comments-section" data-section="comments">
+            <h2>Player Comments</h2>
+            <form id="comment-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" required></textarea>
+                <button type="submit">Submit Comment</button>
+                <p id="error-message" class="error hidden"></p>
+            </form>
+            <div id="comments-list"></div>
+        </section>
+    </main>
+    <button id="scroll-top" class="hidden">↑ Top</button>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
